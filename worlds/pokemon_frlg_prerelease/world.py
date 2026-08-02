@@ -695,6 +695,10 @@ class PokemonFRLGWorld(World):
                                            KantoTrainersanity.special_range_names["none"]
                                            or self.options.sevii_trainersanity !=
                                            SeviiTrainersanity.special_range_names["none"]) else 0
+        slot_data["kanto_trainersanity"] = 1 if (self.options.kanto_trainersanity !=
+                                                 KantoTrainersanity.special_range_names["none"]) else 0
+        slot_data["sevii_trainersanity"] = 1 if (self.options.sevii_trainersanity !=
+                                                 SeviiTrainersanity.special_range_names["none"]) else 0
         slot_data["trainersanity_locations"] = [loc.address for loc in self.get_locations()
                                                 if loc.category == LocationCategory.TRAINER
                                                 or loc.category == LocationCategory.TRAINER_REMATCH]
