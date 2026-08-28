@@ -1,8 +1,8 @@
 {
     "game": "Pokemon FireRed and LeafGreen",
-    "world_version": "1.1.1",
+    "world_version": "1.1.2",
     "minimum_ap_version": "0.6.7",
-    "pokemon_frlg_version": "1.1.1",
+    "pokemon_frlg_version": "1.1.2",
     "firered_extension": ".apfirered",
     "leafgreen_extension": ".apleafgreen",
     "authors": ["Vyneras"]
