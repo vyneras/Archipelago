@@ -176,8 +176,8 @@ class PokemonFRLGWorld(World):
         self.is_universal_tracker = hasattr(self.multiworld, "generation_is_fake")
         self.logic = PokemonFRLGLogic(player, self.item_id_to_name)
         self.patch_data = PokemonFRLGPatchData()
-        self.starting_town = "SPAWN_PALLET_TOWN"
-        self.starting_respawn = "SPAWN_PALLET_TOWN"
+        self.starting_town = "HEAL_LOCATION_PALLET_TOWN"
+        self.starting_respawn = "HEAL_LOCATION_PALLET_TOWN"
         self.free_fly_location_id = 0
         self.town_map_fly_location_id = 0
         self.modified_species = copy.deepcopy(data.species)
