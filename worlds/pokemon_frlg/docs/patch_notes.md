@@ -1,3 +1,7 @@
+# 1.1.3
+## Bug Fixes
+* Fixed `fly_destination_plando` neing completely ignored when randomizing fly destinations
+
 # 1.1.2
 ## Bug Fixes
 * Fixed an issue where strength wasn't required to enter Route 12 from Route 11 when `route_12_boulders` was on
