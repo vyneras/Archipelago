@@ -53,49 +53,49 @@ STATIC_POKEMON_SPOILER_NAMES = {
 }
 
 starting_town_map = {
-    "SPAWN_PALLET_TOWN": "Pallet Town",
-    "SPAWN_VIRIDIAN_CITY": "Viridian City (South)",
-    "SPAWN_PEWTER_CITY": "Pewter City",
-    "SPAWN_CERULEAN_CITY": "Cerulean City",
-    "SPAWN_LAVENDER_TOWN": "Lavender Town",
-    "SPAWN_VERMILION_CITY": "Vermilion City",
-    "SPAWN_CELADON_CITY": "Celadon City",
-    "SPAWN_FUCHSIA_CITY": "Fuchsia City",
-    "SPAWN_CINNABAR_ISLAND": "Cinnabar Island",
-    "SPAWN_INDIGO_PLATEAU": "Indigo Plateau",
-    "SPAWN_SAFFRON_CITY": "Saffron City",
-    "SPAWN_ROUTE4": "Route 4 (West)",
-    "SPAWN_ROUTE10": "Route 10 (North)",
-    "SPAWN_ONE_ISLAND": "One Island Town",
-    "SPAWN_TWO_ISLAND": "Two Island Town",
-    "SPAWN_THREE_ISLAND": "Three Island Town (South)",
-    "SPAWN_FOUR_ISLAND": "Four Island Town",
-    "SPAWN_FIVE_ISLAND": "Five Island Town",
-    "SPAWN_SEVEN_ISLAND": "Seven Island Town",
-    "SPAWN_SIX_ISLAND": "Six Island Town"
+    "HEAL_LOCATION_PALLET_TOWN": "Pallet Town",
+    "HEAL_LOCATION_VIRIDIAN_CITY": "Viridian City (South)",
+    "HEAL_LOCATION_PEWTER_CITY": "Pewter City",
+    "HEAL_LOCATION_CERULEAN_CITY": "Cerulean City",
+    "HEAL_LOCATION_LAVENDER_TOWN": "Lavender Town",
+    "HEAL_LOCATION_VERMILION_CITY": "Vermilion City",
+    "HEAL_LOCATION_CELADON_CITY": "Celadon City",
+    "HEAL_LOCATION_FUCHSIA_CITY": "Fuchsia City",
+    "HEAL_LOCATION_CINNABAR_ISLAND": "Cinnabar Island",
+    "HEAL_LOCATION_INDIGO_PLATEAU": "Indigo Plateau",
+    "HEAL_LOCATION_SAFFRON_CITY": "Saffron City",
+    "HEAL_LOCATION_ROUTE4": "Route 4 (West)",
+    "HEAL_LOCATION_ROUTE10": "Route 10 (North)",
+    "HEAL_LOCATION_ONE_ISLAND": "One Island Town",
+    "HEAL_LOCATION_TWO_ISLAND": "Two Island Town",
+    "HEAL_LOCATION_THREE_ISLAND": "Three Island Town (South)",
+    "HEAL_LOCATION_FOUR_ISLAND": "Four Island Town",
+    "HEAL_LOCATION_FIVE_ISLAND": "Five Island Town",
+    "HEAL_LOCATION_SEVEN_ISLAND": "Seven Island Town",
+    "HEAL_LOCATION_SIX_ISLAND": "Six Island Town"
 }
 
 fly_destination_entrance_map = {
-      "Pallet Town Fly Destination": "SPAWN_PALLET_TOWN",
-      "Viridian City Fly Destination": "SPAWN_VIRIDIAN_CITY",
-      "Pewter City Fly Destination": "SPAWN_PEWTER_CITY",
-      "Route 4 Fly Destination": "SPAWN_ROUTE4",
-      "Cerulean City Fly Destination": "SPAWN_CERULEAN_CITY",
-      "Vermilion City Fly Destination": "SPAWN_VERMILION_CITY",
-      "Route 10 Fly Destination": "SPAWN_ROUTE10",
-      "Lavender Town Fly Destination": "SPAWN_LAVENDER_TOWN",
-      "Celadon City Fly Destination": "SPAWN_CELADON_CITY",
-      "Fuchsia City Fly Destination": "SPAWN_FUCHSIA_CITY",
-      "Saffron City Fly Destination": "SPAWN_SAFFRON_CITY",
-      "Cinnabar Island Fly Destination": "SPAWN_CINNABAR_ISLAND",
-      "Indigo Plateau Fly Destination": 'SPAWN_INDIGO_PLATEAU',
-      "One Island Fly Destination": "SPAWN_ONE_ISLAND",
-      "Two Island Fly Destination": "SPAWN_TWO_ISLAND",
-      "Three Island Fly Destination": "SPAWN_THREE_ISLAND",
-      "Four Island Fly Destination": "SPAWN_FOUR_ISLAND",
-      "Five Island Fly Destination": "SPAWN_FIVE_ISLAND",
-      "Six Island Fly Destination": "SPAWN_SIX_ISLAND",
-      "Seven Island Fly Destination": "SPAWN_SEVEN_ISLAND"
+      "Pallet Town Fly Destination": "HEAL_LOCATION_PALLET_TOWN",
+      "Viridian City Fly Destination": "HEAL_LOCATION_VIRIDIAN_CITY",
+      "Pewter City Fly Destination": "HEAL_LOCATION_PEWTER_CITY",
+      "Route 4 Fly Destination": "HEAL_LOCATION_ROUTE4",
+      "Cerulean City Fly Destination": "HEAL_LOCATION_CERULEAN_CITY",
+      "Vermilion City Fly Destination": "HEAL_LOCATION_VERMILION_CITY",
+      "Route 10 Fly Destination": "HEAL_LOCATION_ROUTE10",
+      "Lavender Town Fly Destination": "HEAL_LOCATION_LAVENDER_TOWN",
+      "Celadon City Fly Destination": "HEAL_LOCATION_CELADON_CITY",
+      "Fuchsia City Fly Destination": "HEAL_LOCATION_FUCHSIA_CITY",
+      "Saffron City Fly Destination": "HEAL_LOCATION_SAFFRON_CITY",
+      "Cinnabar Island Fly Destination": "HEAL_LOCATION_CINNABAR_ISLAND",
+      "Indigo Plateau Fly Destination": 'HEAL_LOCATION_INDIGO_PLATEAU',
+      "One Island Fly Destination": "HEAL_LOCATION_ONE_ISLAND",
+      "Two Island Fly Destination": "HEAL_LOCATION_TWO_ISLAND",
+      "Three Island Fly Destination": "HEAL_LOCATION_THREE_ISLAND",
+      "Four Island Fly Destination": "HEAL_LOCATION_FOUR_ISLAND",
+      "Five Island Fly Destination": "HEAL_LOCATION_FIVE_ISLAND",
+      "Six Island Fly Destination": "HEAL_LOCATION_SIX_ISLAND",
+      "Seven Island Fly Destination": "HEAL_LOCATION_SEVEN_ISLAND"
 }
 
 
@@ -505,16 +505,16 @@ def create_regions(world: "PokemonFRLGWorld") -> Dict[str, Region]:
 
     if world.options.random_starting_town:
         if not world.is_universal_tracker:
-            forbidden_starting_towns = ["SPAWN_INDIGO_PLATEAU"]
+            forbidden_starting_towns = ["HEAL_LOCATION_INDIGO_PLATEAU"]
             if not world.options.shuffle_badges:
-                forbidden_starting_towns.extend(["SPAWN_ROUTE4", "SPAWN_ROUTE10"])
+                forbidden_starting_towns.extend(["HEAL_LOCATION_ROUTE4", "HEAL_LOCATION_ROUTE10"])
             elif world.options.pewter_city_roadblock in (PewterCityRoadblock.option_brock,
                                                          PewterCityRoadblock.option_any_gym):
-                forbidden_starting_towns.append("SPAWN_ROUTE4")
+                forbidden_starting_towns.append("HEAL_LOCATION_ROUTE4")
             if world.options.kanto_only:
-                forbidden_starting_towns.extend(["SPAWN_ONE_ISLAND", "SPAWN_TWO_ISLAND", "SPAWN_THREE_ISLAND",
-                                                 "SPAWN_FOUR_ISLAND", "SPAWN_FIVE_ISLAND", "SPAWN_SIX_ISLAND",
-                                                 "SPAWN_SEVEN_ISLAND"])
+                forbidden_starting_towns.extend(["HEAL_LOCATION_ONE_ISLAND", "HEAL_LOCATION_TWO_ISLAND", "HEAL_LOCATION_THREE_ISLAND",
+                                                 "HEAL_LOCATION_FOUR_ISLAND", "HEAL_LOCATION_FIVE_ISLAND", "HEAL_LOCATION_SIX_ISLAND",
+                                                 "HEAL_LOCATION_SEVEN_ISLAND"])
             blacklisted_starting_towns = [v for k, v in starting_town_blacklist_map.items()
                                           if k in world.options.starting_town_blacklist.value]
             allowed_starting_towns = [town for town in starting_town_map.keys()

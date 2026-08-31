@@ -1285,25 +1285,25 @@ fly_blacklist_map = {
 }
 
 starting_town_blacklist_map = {
-    "Pallet Town": "SPAWN_PALLET_TOWN",
-    "Viridian City": "SPAWN_VIRIDIAN_CITY",
-    "Pewter City": "SPAWN_PEWTER_CITY",
-    "Cerulean City": "SPAWN_CERULEAN_CITY",
-    "Lavender Town": "SPAWN_LAVENDER_TOWN",
-    "Vermilion City": "SPAWN_VERMILION_CITY",
-    "Celadon City": "SPAWN_CELADON_CITY",
-    "Fuchsia City": "SPAWN_FUCHSIA_CITY",
-    "Cinnabar Island": "SPAWN_CINNABAR_ISLAND",
-    "Saffron City": "SPAWN_SAFFRON_CITY",
-    "Route 4": "SPAWN_ROUTE4",
-    "Route 10": "SPAWN_ROUTE10",
-    "One Island": "SPAWN_ONE_ISLAND",
-    "Two Island": "SPAWN_TWO_ISLAND",
-    "Three Island": "SPAWN_THREE_ISLAND",
-    "Four Island": "SPAWN_FOUR_ISLAND",
-    "Five Island": "SPAWN_FIVE_ISLAND",
-    "Seven Island": "SPAWN_SEVEN_ISLAND",
-    "Six Island": "SPAWN_SIX_ISLAND"
+    "Pallet Town": "HEAL_LOCATION_PALLET_TOWN",
+    "Viridian City": "HEAL_LOCATION_VIRIDIAN_CITY",
+    "Pewter City": "HEAL_LOCATION_PEWTER_CITY",
+    "Cerulean City": "HEAL_LOCATION_CERULEAN_CITY",
+    "Lavender Town": "HEAL_LOCATION_LAVENDER_TOWN",
+    "Vermilion City": "HEAL_LOCATION_VERMILION_CITY",
+    "Celadon City": "HEAL_LOCATION_CELADON_CITY",
+    "Fuchsia City": "HEAL_LOCATION_FUCHSIA_CITY",
+    "Cinnabar Island": "HEAL_LOCATION_CINNABAR_ISLAND",
+    "Saffron City": "HEAL_LOCATION_SAFFRON_CITY",
+    "Route 4": "HEAL_LOCATION_ROUTE4",
+    "Route 10": "HEAL_LOCATION_ROUTE10",
+    "One Island": "HEAL_LOCATION_ONE_ISLAND",
+    "Two Island": "HEAL_LOCATION_TWO_ISLAND",
+    "Three Island": "HEAL_LOCATION_THREE_ISLAND",
+    "Four Island": "HEAL_LOCATION_FOUR_ISLAND",
+    "Five Island": "HEAL_LOCATION_FIVE_ISLAND",
+    "Seven Island": "HEAL_LOCATION_SEVEN_ISLAND",
+    "Six Island": "HEAL_LOCATION_SIX_ISLAND"
 }
 
 ability_name_map = {j: data.constants[i] for i, j in [
