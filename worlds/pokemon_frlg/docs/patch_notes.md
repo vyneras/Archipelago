@@ -1,6 +1,7 @@
 # 1.1.3
 ## Bug Fixes
-* Fixed `fly_destination_plando` neing completely ignored when randomizing fly destinations
+* Fixed `fly_destination_plando` being completely ignored when randomizing fly destinations
+* Fixed ER generation failing excessively with certain settings
 
 # 1.1.2
 ## Bug Fixes
