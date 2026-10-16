@@ -255,12 +255,12 @@ def write_tokens(world: "PokemonFRLGWorld") -> None:
                                   (player_name_ids[player_name] * 17) + j,
                                   struct.pack("<B", b))
 
-        if item_name not in item_name_offsets:
-            if len(item_name) > 35:
-                item_name = item_name[:34] + "…"
+        if len(item_name) > 35:
+            item_name = item_name[:34] + "…"
 
-            # Only 36 * 2000 bytes for item names
-            if next_item_name_offset + len(item_name) + 1 > 36 * 2000:
+        if item_name not in item_name_offsets:
+            # Name offsets are unsigned 16-bit values, even though the buffer holds 72,000 bytes.
+            if next_item_name_offset > 0xFFFF or next_item_name_offset + len(item_name) + 1 > 36 * 2000:
                 continue
 
             item_name_offsets[item_name] = next_item_name_offset
